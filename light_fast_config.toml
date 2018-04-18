@@ -1,0 +1,66 @@
+# This config should be placed in following path:
+#   $HOME/Library/Application Support/io.parity.ethereum/config.toml
+
+[parity]
+# Kovan Test Network
+chain = "kovan"
+# Parity continously syncs the chain
+mode = "active"
+# No updates will be auto-installed
+auto_update = "none"
+# Disables auto downloading of new releases. Not recommended.
+no_download = true
+# Blockchain and settings will be stored in ..
+base_path = "."
+# You will be identified as 'SpaceElephant' amongst other nodes..
+identity = "SpaceElephant"
+
+[network]
+# Parity will listen for connections on port 30305.
+port = 30305
+# Disable serving light peers.
+no_serve_light = true
+
+[rpc]
+# You won't be able to interact with Parity using JSON-RPC over HTTP.
+disable = true
+
+[websockets]
+#  JSON-RPC will be listening for connections on IP all.
+interface = "all"
+# Allows connecting from Origin '*'.
+origins = ["*"]
+# Allow connections only using specified addresses.
+hosts = ["all"]
+# Only selected APIs will be exposed over this interface.
+apis = ["web3", "eth", "pubsub", "net", "parity", "parity_pubsub", "shh", "shh_pubsub", "personal", "parity_accounts", "traces", "signer", "parity_set", "secretstore", "rpc"]
+
+[ipc]
+# You won't be able to use IPC to interact with Parity.
+disable = true
+
+[secretstore]
+# You won't be able to encrypt and decrypt secrets.
+disable = true
+
+[dapps]
+# Disable the Dapps server (e.g. status page).
+disable = true
+
+[footprint]
+# Disable tracing.
+tracing = "off"
+# Prune old state data. Maintains journal overlay - fast but extra 50MB of memory used.
+pruning = "fast"
+# Will keep up to 32 old state entries.
+pruning_history = 32
+# Disable Fat DB.
+fat_db = "off"
+# Will keep up to 64MB data in Database cache.
+cache_size_db = 64
+# Significant speed up but unclean exit is unrecoverable (disables DB WAL).
+fast_and_loose = true
+
+[snapshots]
+# Disables automatic periodic snapshots.
+disable_periodic = true
