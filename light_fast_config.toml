@@ -34,7 +34,7 @@ origins = ["*"]
 hosts = ["all"]
 # Only selected APIs will be exposed over this interface.
 apis = ["web3", "eth", "pubsub", "net", "parity", "parity_pubsub", "shh", "shh_pubsub", "personal", "parity_accounts", "traces", "signer", "parity_set", "secretstore", "rpc"]
-# JSON-RPC over WebSockets will be accessible on port 8546.
+# JSON-RPC over WebSockets will be accessible on port 8080.
 port = 8080
 
 [ipc]
@@ -60,8 +60,6 @@ pruning_history = 32
 fat_db = "off"
 # Will keep up to 64MB data in Database cache.
 cache_size_db = 64
-# Significant speed up but unclean exit is unrecoverable (disables DB WAL).
-fast_and_loose = true
 
 [snapshots]
 # Disables automatic periodic snapshots.
