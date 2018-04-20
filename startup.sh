@@ -1,6 +1,6 @@
 #!/bin/bash
 
-/parity/parity --config light_fast_config.toml --geth --light 
+/parity/parity --config light_fast_config.toml --no-ancient-blocks
 
 #echo "-- START PYTHON HTTP SERVER ON 8080"
 
