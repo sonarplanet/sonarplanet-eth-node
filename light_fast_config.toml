@@ -15,7 +15,7 @@ base_path = "."
 # You will be identified as 'SpaceElephant' amongst other nodes..
 identity = "SpaceElephant"
 # Disable light mode
-light = "false"
+light = false
 
 [network]
 # Parity will listen for connections on port 30305.
