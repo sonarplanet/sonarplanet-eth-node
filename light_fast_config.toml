@@ -13,7 +13,7 @@ no_download = true
 # Blockchain and settings will be stored in ..
 base_path = "."
 # You will be identified as 'SpaceElephant' amongst other nodes..
-identity = "SpaceElephant"
+identity = "SonarPlanet"
 # Disable light mode
 light = false
 
