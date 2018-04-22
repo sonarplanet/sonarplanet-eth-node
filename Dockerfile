@@ -1,8 +1,8 @@
 FROM parity/parity
 
 COPY ./light_fast_config.toml . 
-COPY ./startup.sh .
 
 EXPOSE 8080
 
-ENTRYPOINT [ "/bin/bash", "./startup.sh" ]
+ENTRYPOINT ["/parity/parity"]
+CMD ["--config","light_fast_config.toml","--no-ancient-blocks"]
