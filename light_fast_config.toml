@@ -2,8 +2,8 @@
 #   $HOME/Library/Application Support/io.parity.ethereum/config.toml
 
 [parity]
-# Kovan Test Network
-chain = "kovan"
+# Ethereum Network
+chain = "homestead"
 # Parity continously syncs the chain
 mode = "active"
 # No updates will be auto-installed
@@ -18,7 +18,7 @@ identity = "SonarPlanet"
 light = false
 
 [network]
-# Parity will listen for connections on port 30305.
+# Parity will listen for connections on port 30303.
 port = 30305
 # Disable serving light peers.
 no_serve_light = true
