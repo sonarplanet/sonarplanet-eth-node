@@ -1,9 +1,4 @@
-# This config should be placed in following path:
-#   $HOME/Library/Application Support/io.parity.ethereum/config.toml
-
 [parity]
-# Ethereum Network
-chain = "homestead"
 # Parity continously syncs the chain
 mode = "active"
 # No updates will be auto-installed
@@ -12,14 +7,12 @@ auto_update = "none"
 no_download = true
 # Blockchain and settings will be stored in ..
 base_path = "."
-# You will be identified as 'SpaceElephant' amongst other nodes..
+# You will be identified as 'SonarPlanet' amongst other nodes..
 identity = "SonarPlanet"
 # Disable light mode
 light = false
 
 [network]
-# Parity will listen for connections on port 30303.
-port = 30305
 # Disable serving light peers.
 no_serve_light = true
 # Start syncing from the snapshot over the network.
@@ -58,6 +51,8 @@ disable = true
 tracing = "off"
 # Prune old state data. Maintains journal overlay - fast but extra 50MB of memory used.
 pruning = "fast"
+# Increase performance on SSD.
+db_compaction = "ssd"
 # Will keep up to 8 old state entries.
 pruning_history = 8
 # Will keep up to 32 MB old state entries.
@@ -68,8 +63,6 @@ fat_db = "off"
 cache_size_db = 64
 # Significant speed up but unclean exit is unrecoverable (disables DB WAL).
 fast_and_loose = true
-
-db_compaction = "ssd"
 
 [snapshots]
 # Disables automatic periodic snapshots.
