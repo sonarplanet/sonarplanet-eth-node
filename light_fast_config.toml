@@ -1,4 +1,5 @@
 [parity]
+chain = "kovan"
 # Parity continously syncs the chain
 mode = "active"
 # No updates will be auto-installed
@@ -10,13 +11,13 @@ base_path = "."
 # You will be identified as 'SonarPlanet' amongst other nodes..
 identity = "SonarPlanet"
 # Disable light mode
-light = false
+light = true
 
 [network]
 # Disable serving light peers.
 no_serve_light = true
 # Start syncing from the snapshot over the network.
-warp = true
+warp = false
 
 [rpc]
 # You won't be able to interact with Parity using JSON-RPC over HTTP.
@@ -51,8 +52,8 @@ disable = true
 tracing = "off"
 # Prune old state data. Maintains journal overlay - fast but extra 50MB of memory used.
 pruning = "fast"
-# Increase performance on SSD.
-db_compaction = "ssd"
+# Increase performance on HDD.
+db_compaction = "hdd"
 # Will keep up to 8 old state entries.
 pruning_history = 8
 # Will keep up to 32 MB old state entries.
