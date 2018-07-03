@@ -5,4 +5,4 @@ COPY ./light_fast_config.toml .
 EXPOSE 8080
 
 ENTRYPOINT ["/parity/parity"]
-CMD ["--config","light_fast_config.toml","--no-ancient-blocks"]
+CMD ["--config","light_fast_config.toml","--light"]
