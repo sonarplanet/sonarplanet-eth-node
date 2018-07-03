@@ -10,13 +10,13 @@ base_path = "."
 # You will be identified as 'SonarPlanet' amongst other nodes..
 identity = "SonarPlanet"
 # Disable light mode
-light = false
+light = true
 
 [network]
 # Disable serving light peers.
 no_serve_light = true
 # Start syncing from the snapshot over the network.
-warp = true
+warp = false
 
 [rpc]
 # You won't be able to interact with Parity using JSON-RPC over HTTP.
