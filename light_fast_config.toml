@@ -27,11 +27,15 @@ warp = true
 
 [rpc]
 # You won't be able to interact with Parity using JSON-RPC over HTTP.
-disable = true
+disable = false
+interface = "0.0.0.0"
+# Allows Cross-Origin Requests from domain '*'.
+cors = ["*"]
+
 
 [websockets]
 # JSON-RPC over WebSockets will be accessible on port 8080.
-port = 8080
+port = 8546
 #  JSON-RPC will be listening for connections on IP all.
 interface = "all"
 # Allows connecting from Origin '*'.
